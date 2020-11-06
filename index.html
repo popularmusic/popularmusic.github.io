@@ -4,7 +4,13 @@ section: blog
 title: SEM Popular Music Section
 ---
 
+<div class='col12 splash'>
+  <img src='{{ site.baseurl }}/img/saso-tusar-QtgGYlug6Cw-unsplash-skinny.jpg' alt='' />
+</div>
+<span><small>Photo by <a href="https://unsplash.com/@sasotusar?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sašo Tušar</a> on <a href="https://unsplash.com/s/photos/music?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></small></span>
+
 <div class='listing col6 pad4h margin3'>
+  <h1>Popular Music Section</h1>
   {% for item in site.categories.blog limit:1000 %}
     {% capture date %}{{ item.date | date: '%B %Y' }}{% endcapture %}
     {% capture ndate %}{{ item.next.date | date: '%B %Y' }}{% endcapture %}
@@ -15,5 +21,6 @@ title: SEM Popular Music Section
     <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}} <span class='date'>&#126; {{item.date | date:"%b %d"}}</span></a>
   {% endfor %}
 </div>
+
 
 {% include rss-link.html %}
