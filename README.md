@@ -1,3 +1,9 @@
+# Popular Music Section of SEM
+
+This site is the home page for the Society for Ethnomusicology's Popular Music Section.
+
+## Theme and code source info
+
 Starter is a barebones starting point for responsive sites built on Jekyll and with
 site management in [prose](http://prose.io). To get started, Fork this repo and [install Jekyll](http://jekyllrb.com/docs/installation).
 
